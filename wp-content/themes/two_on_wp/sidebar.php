@@ -44,7 +44,7 @@
                             <textarea col="" rows="" id="message" class="col-xs-12" placeholder="Message..."></textarea>
                         </div>
 
-                        <input id="submit" type="submit" value="submit">
+                        <input id="submit" type="submit">
                     </form>
                 </aside>
             </div>

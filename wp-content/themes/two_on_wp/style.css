@@ -222,6 +222,10 @@ a:focus {
   cursor: pointer;
 }
 
+.btn-more span.plw {
+  font-size: 15px;
+}
+
 /* main sections */
 .section {
   position: relative;

@@ -28,7 +28,35 @@
                     <li><a href="#faq">Faq</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>-->
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+
+                <?php
+                if( is_home() ) {
+
+                    $x = '<ul id="%1$s" class="%2$s">';
+                    $x .= '<li><a href="#home">Strona główna</a></li>';
+                    $x .= '<li><a href="#pricing">Wycena</a></li>';
+                    $x .= '<li><a href="#faq">Faq</a></li>';
+                    $x .= '<li><a href="#contact">Kontakt</a></li>';
+                    $x .= '%3$s</ul>';
+
+                } else {
+
+                    $x = '<ul id="%1$s" class="%2$s">';
+                    $x .= '<li><a href="'.esc_url( home_url( '/' ) ).'">Strona główna</a></li>';
+                    $x .= '<li><a href="'.esc_url( home_url( '/' ) ).'#pricing">Wycena</a></li>';
+                    $x .= '<li><a href="'.esc_url( home_url( '/' ) ).'#faq">Faq</a></li>';
+                    $x .= '<li><a href="#contact">Kontakt</a></li>';
+                    $x .= '%3$s</ul>';
+
+                }
+
+                    wp_nav_menu(array(
+                        'theme_location' => 'main-menu',
+                        'container' => false,
+                        'items_wrap' => $x
+                    ));
+                    //wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+                ?>
             </nav>
         </div>
     </header>
@@ -37,9 +65,9 @@
     <div class="banner" id="home">
         <div class="container">
            <div class="banner-caption">
-                 <p>Vivamus<br> vestibulum nulla<br> nec ante</p>
+                <p>Vivamus<br> vestibulum nulla<br> nec ante</p>
                 <p>Integer vitae<br> libero ac</p>
-                <a href="#" class="btn-more">Read more</a>
+               <a href="#" class="btn-more">Czytaj wi<span class="plw">ę</span>cej</a>
             </div>
             <div class="img-box">
                 <img src="<?php bloginfo( 'template_url' ); ?>/img/phone.png" alt="" id="img-phone">
