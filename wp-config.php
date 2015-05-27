@@ -22,13 +22,13 @@
 define('DB_NAME', 'two_on_wp');
 
 /** Nazwa użytkownika bazy danych MySQL */
-define('DB_USER', 'root');
+define('DB_USER', getenv('C9_USER'));
 
 /** Hasło użytkownika bazy danych MySQL */
 define('DB_PASSWORD', '');
 
 /** Nazwa hosta serwera MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', getenv('IP'));
 
 /** Kodowanie bazy danych używane do stworzenia tabel w bazie danych. */
 define('DB_CHARSET', 'utf8mb4');
