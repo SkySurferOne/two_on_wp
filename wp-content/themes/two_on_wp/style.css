@@ -691,11 +691,6 @@ input[type=submit] {
   .banner #img-browser {
     display: none;
   }
-}
-@media (max-width: 590px) {
-  .banner #img-phone {
-    display: none;
-  }
 
   .header .navbar-toggle {
     display: block;
@@ -707,6 +702,7 @@ input[type=submit] {
     position: absolute;
     top: 80px;
     width: 100%;
+    max-width: 750px;
     margin-left: -15px;
   }
   .header .main-nav a {
@@ -735,6 +731,11 @@ input[type=submit] {
 
   .header .main-nav.open {
     display: block;
+  }
+}
+@media (max-width: 590px) {
+  .banner #img-phone {
+    display: none;
   }
 }
 @media (max-width: 768px) {
