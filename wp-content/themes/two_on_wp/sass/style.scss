@@ -729,14 +729,8 @@ $screen-xs-max: 768px;
     .banner #img-browser {
        display: none;
     }
-}
 
-@media (max-width: 590px) {
-    .banner #img-phone {
-        display: none;
-    }
-
-    .header .navbar-toggle {
+     .header .navbar-toggle {
         display: block;
     }
 
@@ -746,6 +740,7 @@ $screen-xs-max: 768px;
         position: absolute;
         top: 80px;
         width: 100%;
+        max-width: 750px;
         margin-left: -15px;
 
         a {
@@ -776,6 +771,13 @@ $screen-xs-max: 768px;
     .header .main-nav.open {
         display: block;
     }
+}
+
+@media (max-width: 590px) {
+    .banner #img-phone {
+        display: none;
+    }
+
 }
 
 @media (max-width: $screen-xs-max) {
