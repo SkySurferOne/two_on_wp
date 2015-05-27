@@ -1,0 +1,21 @@
+// variables
+$light-blue: #00b7e3;
+$light-blue2: #6ed6ef;
+$blue: #0dbae4;
+$dark-blue: #354c62;
+$darker-blue: #182535;
+$darkest-blue: #23303f;
+
+$dark-gray: #2b3034;
+$input-gray: #f0f0f0;
+$light-gray: #7e8996;
+$semi-light-gray: #dddddd;
+$lighter-gray: #f9f9f9;
+
+$break-line: #42556d;
+
+// framework utilities
+@import "compass/css3";
+
+// my own imports
+@import "wp-style-header";
