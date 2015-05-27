@@ -4,6 +4,10 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
     <title><?php wp_title( ' | ', true, 'right' ); ?></title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 
