@@ -388,6 +388,13 @@ article.page {
     text-align: center;
 }
 
+#comments-list {
+    li {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
 /* cake chart - progress-ring */
 /*
     1% = 3.6deg
