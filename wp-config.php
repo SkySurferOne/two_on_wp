@@ -36,6 +36,8 @@ define('DB_CHARSET', 'utf8mb4');
 /** Typ porównań w bazie danych. Nie zmieniaj tego ustawienia, jeśli masz jakieś wątpliwości. */
 define('DB_COLLATE', '');
 
+define('WP_SITEURL', 'http://' . getenv('C9_PROJECT') . '.' . getenv('C9_USER') . '.c9.io');
+
 /**#@+
  * Unikatowe klucze uwierzytelniania i sole.
  *
@@ -73,7 +75,7 @@ $table_prefix  = 'wp_';
  * Wielce zalecane jest, aby twórcy wtyczek oraz motywów używali
  * WP_DEBUG w miejscach pracy nad nimi.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* To wszystko, zakończ edycję w tym miejscu! Miłego blogowania! */
 
