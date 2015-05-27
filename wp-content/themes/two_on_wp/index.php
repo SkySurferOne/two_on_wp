@@ -6,21 +6,6 @@
 
 <?php get_header(); ?>
 
-    <!-- banner -->
-    <div class="banner" id="home">
-        <div class="container">
-           <div class="banner-caption">
-                 <p>Vivamus<br> vestibulum nulla<br> nec ante</p>
-                <p>Integer vitae<br> libero ac</p>
-                <a href="#" class="btn-more">Read more</a>
-            </div>
-            <div class="img-box">
-                <img src="<?php bloginfo( 'template_url' ); ?>/img/phone.png" alt="" id="img-phone">
-                <img src="<?php bloginfo( 'template_url' ); ?>/img/browser.png" alt="" class="" id="img-browser">
-            </div>
-        </div>
-    </div>
-
     <!-- section 1 -->
     <section class="section section-1" id="pricing">
         <div class="container">
